@@ -40,12 +40,25 @@
             </div>
           </div>
         </nav>
-        
+        <!--<section class="hero">
+            <figure><img src="images/kelly-sikkema-ml1IgjV8OvY-unsplash-opacity2.png" id="hero-img"></figure>
+         <div class="hero-text">
+            <h1>CUSTOMIZED DESIGNS</h1>
+        </div> 
+         <div class="line" id="line1"></div>
+         <div class="line" id="line2"></div>
+         <div class="line" id="line3"></div>
+         <div class="circle" id="circle1"></div>
+         <div class="circle" id="circle2"></div>
+         <div class="circle" id="circle3"></div>
+        <p id="hero-p1">Work with a designer that has years of creative passion</p>
+        <p id="hero-p2">Personalized website to meet your brands needs</p>
+    </section>-->
     </header>
     <section class="hero-page">
         <figure class="hero-bkg"><img src="images/kelly-sikkema-ml1IgjV8OvY-unsplash-opacity2.png" class="hero-bkg">
-            <figcaption class="hero-bkg"><h1>CHARLANNE HEROLD</h1><br><p class="hero-p">A Web Designer that can help you realize your visions and create a stronger brand presence online</p>
-                <button class='letschat'><a href="#Contact">Lets Chat</a></button>
+            <figcaption class="hero-bkg"><h1>CHARLANNE HEROLD</h1><br><p class="hero-p">A Web Designer that can help you realize your visions create a stronger brand</p>
+                <button class='letschat'><a href="#Contact">Let's Chat</a></button>
             </figcaption>
             
         </figure>
@@ -107,7 +120,7 @@
     <section id="Testimonials" class="Testimonials">
         
         <!--<img id="testimonials-img" src="images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg">-->
-        <div class="test-text"></div>
+        <div class="test-text">
         <h1 class="fixed-text">SEE WHAT OTHERS HAVE TO SAY</h1>
         <!--<div class="line test-text" id="line6"></div>
         <div class="line test-text" id="line7"></div>
@@ -127,7 +140,7 @@
             <p class="review-text" id="josephine-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium. doloremque laudantium</p><br>
             <p class="name" id="josephine">Josephine J.</p>
             <div class="star" id="star1"><img src="icons/icons8-star-24.png"><img src="icons/icons8-star-24.png"><img src="icons/icons8-star-24.png"><img src="icons/icons8-star-24.png"><img src="icons/icons8-star-24.png"></div>
-        </div></div>
+        </div></div></div>
     </section>
 
     <section id="AboutMe">
@@ -146,7 +159,7 @@
         </div>
     </section>
 
-    <section id="Creations">
+    <section id="Creations" class="desktop">
         <h3 id="creation-h3">CREATIONS</h3>
         <p class="creation-description"><span id="creation-description">Altough I have had a passion for creating for a long time, it was only in August 2023 that I started to code. </span></p>
             <div id="creation-grid">
@@ -163,8 +176,38 @@
                 <span class="caption">DIGITAL ART</span></a>
             </div>
         </div>
+<!-- Slideshow container -->
+<div class="slideshow-container" id="Creations" class="mobile">
 
-            
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <a href="https://charher1221.github.io/portfolioPage/index.html" target="_blank"><img src="images/original-portfolio.png" style="width:100%" class="creation-box-mobile">
+      <div class="text">ORIGINAL PORTFOLIO</div></a>
+    </div>
+  
+    <div class="mySlides fade">
+      <a href="https://charher1221.github.io/drumKit/" target="_blank"><img src="images/javascript-drumkit.png" style="width:100%" class="creation-box-mobile">
+      <div class="text">JAVASCRIPT - DRUM KIT</div></a>
+    </div>
+  
+    <div class="mySlides fade">
+      <a href="https://instagram.com/charher_art?" target="_blank"><img src="images/ezrasBagelsLogo.png" style="width:100%" class="creation-box-mobile">
+      <div class="text">DIGITAL ART</div></a>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+        
             
          
 <!--Links:
@@ -194,4 +237,34 @@ portfolio: https://charher1221.github.io/portfolioPage/index.html -->
 and The Johnsons Photo and icon from Icons8</p>
     </section>
 </body>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </html>
