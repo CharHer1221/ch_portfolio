@@ -1050,10 +1050,12 @@ label{
     user-select: none;
   }
   .prev{
+      display: none;
     left: -50px;
   }
   /* Position the "next button" to the right */
   .next {
+      display: none;
     right:-50px;
     border-radius: 3px 0 0 3px;
   }
