@@ -171,7 +171,7 @@ body{
   }
   
 /*header{
-    border: 1px solid magenta;
+    
    /*background-image: url('images/kelly-sikkema-ml1IgjV8OvY-unsplash-opacity2.png'); 
     background-size: 100vw 100vh;  
     background-repeat: no-repeat;
@@ -193,22 +193,7 @@ nav{
     width: 100%;
     overflow: hidden;
 }
-/*.hamburger{
-    display: none;
-}
-.navbar{
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    /*border: yellow 1px solid;
-    height: 50px;
-    margin: auto;
-    background-color: rgba(25, 25, 26,0.4);
-    z-index: 1;
-    
-}*/
+
 li{
     
     font-family: 'Roboto Condensed';
@@ -231,24 +216,7 @@ a:hover{
 }
 
 
-/*.navlist{
-    /*border: 1px solid gray;*/
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 800px;
-    
 
-    
-}
-
-.nav-item{
-   border: 1px solid rgb(28, 31, 218);
-    list-style-type: none;
-    padding-top: 10px;
-    padding-right: 15px;
-
-}*/
 .line{
     border-top: var(--color-6) solid 2px;
 }
@@ -279,12 +247,7 @@ a:hover{
     top: 420px;
     left: 1100px;
 }
-/*#circle1{
-    position: relative;
-    top: 327px;
-    left: 380px;
-    background-color: var(--color-6);
-}*/
+
 #circle2{
     position: relative;
     top: 585px;
@@ -331,31 +294,7 @@ p{
     border: none;
     border-bottom: white 2px solid;
 }
-/*.hero-text{
-    width: 646px;
-    height: 75px;
-    right: 380px;
-    top: 295px;
-}
-#hero-p1{
-    position: relative;
-    top: 585px;
-    left: 695px;
-    width: 187px;
-    line-height: 1.1u;
-    letter-spacing: 0.12em;
-    text-align: center;
-}
-#hero-p2{
-    position: relative;
-    top: 415px;
-    left: 1060px;
-    width: 187px;
-    line-height: 1.1rem;
-    letter-spacing: 0.12em;
-    text-align: center;
-    
-}*/
+
 
 .Featured{
     background-color: var(--color-7);
