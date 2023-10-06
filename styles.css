@@ -403,7 +403,6 @@ p{
 .StartHere{
     height: 900px;
     width: 100vw;
-    border: lightpink solid 1px;
   
     
     
@@ -414,7 +413,7 @@ p{
     width: 100%;
     height: 100vh;
     object-fit: fill;
-    
+    filter: blur(10px);
     position: fixed;
     left: 0;
     right: 0;
