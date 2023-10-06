@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+
     
 }
 
@@ -526,7 +527,7 @@ hr{
     background-image: url(images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
     background-repeat: no-repeat;
     background-size:  100%;
-    height: 100vh;
+    height: 780px;
     padding-bottom: 100px;
 }
 
@@ -621,23 +622,24 @@ hr{
 #AboutMe{
     background-color: var(--color-8);
     width: 100vw;
-    height: 100vh;
+    height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    justify-content: space-around;
     border: yellow 1px solid;
     align-items: center;
     margin: auto;
+    padding: 5%;
     
 }
 #grid1{
     width: 500px;
     text-align: start;
-    padding-left: 50px;
+    
 
 }
 #grid2{
-    padding-left: 50px;
+    
 }
 #quote{
     color: var(--color-2);
@@ -814,14 +816,21 @@ label{
 }
 @media only screen and (max-width: 1000px) {
     html, body{
-        overflow-x: hidden;
+    overflow-x: hidden;
     }
     .hero-bkg{
-        height: 300px;
+        height: 500px;
     }
     .hero-bkg figcaption h1{
         font-size: 20px;
         width: 100px;
+    }
+    .hero-p{
+        font-size: 18px;
+        max-width: 280px;
+    }
+    .hero-page{
+        height: 500px;
     }
     .Featured{
         height: 210px;
@@ -832,14 +841,11 @@ label{
     .icons{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        padding-left: 100;
-        padding-right: 0;
-        position: relative;
-        margin: 0;
+        justify-content: space-between;
+        align-content: center;
         padding: 0;
-        padding-bottom: 10px;
+        margin: auto;
+        
         
     }
     #GMA-logo{
@@ -895,6 +901,16 @@ label{
         left: 0;
         top: 100px;
     }
+    .toolgrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .number{
+       float: none;
+        padding: 0;
+    }
     #drawinggrid{
         width: 302px;
         height: 352px;
@@ -930,8 +946,15 @@ label{
         top: 0;
         left: 30px;
         font-size: 40px;
-        width: 400px;
+        width: 350px;
     }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
 
     #card1{
         position: relative;
@@ -972,8 +995,11 @@ label{
        padding-right: 20px;
     }
     #photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
         padding: 0;
-        padding-bottom: 50px;
     
     }
     
@@ -982,6 +1008,7 @@ label{
     }
     .creation-descritpion{
         width: 350px;
+        display: block;
         
         
     }
