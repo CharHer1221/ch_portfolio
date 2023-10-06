@@ -97,7 +97,7 @@ body{
     width: 32px;
     position: absolute;
     top: 17px;
-    left: 20px;
+    left: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ body{
   }
   
 /*header{
-    
+    border: 1px solid magenta;
    /*background-image: url('images/kelly-sikkema-ml1IgjV8OvY-unsplash-opacity2.png'); 
     background-size: 100vw 100vh;  
     background-repeat: no-repeat;
@@ -193,7 +193,22 @@ nav{
     width: 100%;
     overflow: hidden;
 }
-
+/*.hamburger{
+    display: none;
+}
+.navbar{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /*border: yellow 1px solid;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(25, 25, 26,0.4);
+    z-index: 1;
+    
+}*/
 li{
     
     font-family: 'Roboto Condensed';
@@ -216,7 +231,24 @@ a:hover{
 }
 
 
+/*.navlist{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 800px;
+    
 
+    
+}
+
+.nav-item{
+   border: 1px solid rgb(28, 31, 218);
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 15px;
+
+}*/
 .line{
     border-top: var(--color-6) solid 2px;
 }
@@ -247,7 +279,12 @@ a:hover{
     top: 420px;
     left: 1100px;
 }
-
+/*#circle1{
+    position: relative;
+    top: 327px;
+    left: 380px;
+    background-color: var(--color-6);
+}*/
 #circle2{
     position: relative;
     top: 585px;
@@ -294,12 +331,37 @@ p{
     border: none;
     border-bottom: white 2px solid;
 }
-
+/*.hero-text{
+    width: 646px;
+    height: 75px;
+    right: 380px;
+    top: 295px;
+}
+#hero-p1{
+    position: relative;
+    top: 585px;
+    left: 695px;
+    width: 187px;
+    line-height: 1.1u;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+#hero-p2{
+    position: relative;
+    top: 415px;
+    left: 1060px;
+    width: 187px;
+    line-height: 1.1rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+    
+}*/
 
 .Featured{
     background-color: var(--color-7);
     height: 278px;
     width: 100vw;
+    border: lime 1px solid;
     align-content: center;
     padding-top: 30px;  
     overflow: hidden;
@@ -340,6 +402,7 @@ p{
 .StartHere{
     height: 900px;
     width: 100vw;
+    border: lightpink solid 1px;
     
     
 
@@ -563,6 +626,7 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
+    
     align-items: center;
     margin: auto;
     padding: 5%;
@@ -617,10 +681,16 @@ button{
 
 #Creations{
     background-color: var(--color-2);
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     text-align: center;
     
+}
+.slideshow-container{
+    display: none;
+}
+.mySlides{
+    display: none;
 }
 #creation-h3{
     line-height: 60px;
@@ -640,15 +710,17 @@ button{
 }
 #creation-grid{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
     gap: 50px;
 }
 .creation-box{
+    display: flex;
     width: 430px;
     height: 350px;
-    
+    display: flex;
     border-radius: 5%;
     
     
@@ -771,6 +843,7 @@ label{
     .Featured{
         height: 210px;
         padding-top: 10px;
+        display: none;
     }
    
     
@@ -784,6 +857,7 @@ label{
         
         
     }
+  
     #GMA-logo{
         width: 101px;
         height: 97.5px;
@@ -804,6 +878,7 @@ label{
         width: 115px;
         height: 80px;
     }
+    
     #background-video{
         width: 600px;
         height: 1000px
@@ -848,6 +923,7 @@ label{
         padding: 0;
     }
     #drawinggrid{
+        display: none;
         width: 302px;
         height: 352px;
         border-radius: 2%;
@@ -874,8 +950,8 @@ label{
         padding-top: 15px;
     }
     #Testimonials{
-        height: 1500px;
-        background-size: cover;
+        height: 1300px;
+        background-image: none;
     }
     .fixed-text{
         position: relative;
@@ -884,17 +960,23 @@ label{
         font-size: 40px;
         width: 350px;
     }
+   
     .cards{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+     
+        width: 200px;
+        height: 250px;
+    }
+    .card{
+        width: 300px;
+    }
+    .review-text{
+        width: 270px;
     }
  
 
     #card1{
-        position: relative;
-        top: 20px;
+        
+        top: 50px;
         left: 5px;
     }
 
@@ -905,12 +987,12 @@ label{
     }
     #card3{
         position: relative;
-        top: 120px;
+        top: 90px;
         left: 5px;
     }
     #AboutMe{
         display: inline-block;
-        height: 1525px;
+        height: fit-content;
 
     }
     #quote{
@@ -931,23 +1013,133 @@ label{
        padding-right: 20px;
     }
     #photo{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         width: 350px;
         padding: 0;
     
     }
+    /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides img{
+    width: 100vw;
+    height: 300px;
+  }
+  
+  /* Next & previous buttons */
+  .next,.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev{
+    left: -50px;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right:-50px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    font-family: 'Syne', sans-serif;
+    color: white;
     
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    padding-bottom:3px ;
+    position: absolute;
+    bottom: 25px;
+    width: 100vw;
+    height: 27px;
+    text-align: center;
+    
+    margin: auto;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .creation-box-mobile{
+    width: 300px;
+    height: 400px;
+  }
     #Creations{
-        height: 1600px;
+        height: 800px;
+    }
+    .creation-box{
+        display: none;
+        width: 200px;
+        height: 250;;
     }
     .creation-descritpion{
         width: 350px;
         display: block;
+    }   
+    .slideshow-container{
+        display: inline;
+    }  
+    .mySlides{
+        display: inline;
+    } 
         
-        
-    }
+    
     #creation-h3{
         font-size: 50px;
         text-align: center;
@@ -955,17 +1147,19 @@ label{
     }
     
 
-    #creation-grid{
-        display: flex;
-        flex-direction: column;
-       
-    }
+    
     .caption{
         padding-bottom: 50px;
+    }
+    #Contact{
+        background-image: url(images/Martin-Charlanne-Married-536_websize\ \(2\)-mobile.png);
     }
     form{
        position: relative;
        left: 20px;
+    }
+    #contact-head{
+        font-size: 50px;
     }
     .footer{
         height: 100px;
